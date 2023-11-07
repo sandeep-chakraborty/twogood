@@ -194,7 +194,6 @@ span {
 .child {
   height: 55vh;
   width: 40vw;
-
   position: relative;
   display: flex;
   align-items: center;

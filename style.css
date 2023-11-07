@@ -59,6 +59,7 @@ body {
   border-radius: 50px;
   background-color: #f7f7f7;
 }
+
 #nav #nav-part2 {
   display: flex;
   align-items: center;
@@ -172,10 +173,18 @@ span {
 #page2 .elem .dets i {
   font-size: 16px;
 }
-#page3 {
-  min-height: 120vh;
-  width: 100%;
+.page2-extended {
+  margin: 4vw 3vw 1vw;
+  padding-bottom: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
 
+#page3 {
+  min-height: 130vh;
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -221,8 +230,210 @@ span {
   text-align: justify;
   font-size: larger;
 }
+.items1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: scroll;
+  cursor: pointer;
+}
+.item {
+  margin: 0 20px;
+  width: 200px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vw 1vw;
+  margin-bottom: 20px;
+}
+.item .circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+.item h6 {
+  margin-top: 1.5vw;
+  font-size: 2vw;
+  font-weight: 300;
+}
+.page-4 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  overflow: hidden;
+}
+.page-4-main {
+  width: 70vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page-4-main h2 {
+  line-height: 1;
+  font-size: 5vw;
+  font-family: futura;
+}
+.btn {
+  display: block;
+  margin-top: 2vw;
+  font-size: 1.3vw;
+  font-family: futura;
+  color: #fff;
+  background-color: #000;
+  padding: 1vw 2vw;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.page-4-main p {
+  margin-top: 20px;
+  font-size: 19.5px;
+}
+#page-5 {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4vw 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+.page-5-left {
+  width: 30vw;
+  margin-right: 3vw;
+}
+.page-5-img {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.page-5-right {
+  width: 70vw;
+  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.page-5-right .page-5-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.page-5-left h2 {
+  font-size: 2vw;
+  font-family: futura;
+  margin-bottom: 2vw;
+}
+.page-5-left p {
+  font-size: 1.2vw;
+  margin-bottom: 2vw;
+}
+.email-collector {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.548);
+}
+#page-6 {
+  width: 100%;
+  padding: 4vw 3vw;
+}
+#page-6 > p {
+  width: 70vw;
+  font-size: 1vw;
+  text-align: center;
+  margin: 3vw auto 1vw;
+}
+.feedback-msg {
+  color: red;
+  text-transform: uppercase;
+}
+.page-6-bottom-section {
+  width: 100%;
+  margin: 5vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.email-collector input {
+  width: 80%;
+  padding: 10px 0px;
+  font-size: 3vw;
+  font-family: futura;
+  text-transform: uppercase;
+  color: black;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+}
+.email-collector i {
+  font-size: 2vw;
+  cursor: pointer;
+  user-select: none;
+}
+.page-6-bottom-1 h2 {
+  font-size: 1.6vw;
+  font-family: futura;
+  color: #333;
+}
+.page-6-bottom-1 ul {
+  list-style: none;
+}
+.page-6-bottom-2 img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.page-6-bottom-3 h2 {
+  font-size: 1.6vw;
+  font-family: futura;
+  color: #333;
+}
+.page-6-bottom-3 ul {
+  list-style: none;
+}
 @media (max-width: 1000px) {
+  .ass {
+    margin-bottom: 50px;
+  }
+  #page-5 {
+    min-height: 70vh;
+    padding: 4vw 1vw;
+    flex-direction: column-reverse;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .page-5-left {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 3vw;
+  }
+  .page-5-right {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-5-img {
+    width: 49%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .page-5-left p {
+    font-size: 3vw;
+    margin-bottom: 4vw;
+  }
+  .page-5-left h2 {
+    font-size: 6vw;
+    font-family: futura;
+    margin-bottom: 2vw;
+  }
   #page1 {
     min-height: 70vh;
     width: 100%;
@@ -302,7 +513,7 @@ span {
   #page3 {
     min-height: 120vh;
     width: 100%;
-
+    margin-bottom: 50px;
     position: relative;
     display: flex;
     align-items: center;

@@ -261,7 +261,7 @@ span {
 }
 .page-4 {
   height: 100vh;
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: top;
   flex-direction: column;
@@ -411,10 +411,6 @@ span {
   }
   .ass {
     margin-bottom: 50px;
-  }
-  #icons {
-    position: relative;
-    right: 82px;
   }
   #page-5 {
     min-height: 70vh;

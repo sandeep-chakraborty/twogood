@@ -24,7 +24,6 @@
 ::-webkit-scrollbar-thumb {
   width: 0;
 }
-
 html,
 body {
   height: 100%;
@@ -383,6 +382,7 @@ span {
 }
 .page-6-bottom-1 ul {
   list-style: none;
+  font-size: 1.04vw;
 }
 .page-6-bottom-2 img {
   border-radius: 50%;
@@ -396,6 +396,7 @@ span {
 }
 .page-6-bottom-3 ul {
   list-style: none;
+  font-size: 1.04vw;
 }
 @media (max-width: 1000px) {
   #page-6 > p {
